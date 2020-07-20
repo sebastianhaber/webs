@@ -47,9 +47,9 @@ body {
         width: 90%;
         margin: 0 auto;
     }
-    section{
-        margin: 10px 0;
-    }
+    /*section{
+        margin-bottom: 10px;
+    }*/
     .medium-font{
         font-weight: 500;
     }
@@ -147,6 +147,7 @@ body {
         color: white;
         font-weight: 500;
         font-size: 24px;
+        margin: 0;
     }
 
     .wch p {
