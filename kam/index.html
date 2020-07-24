@@ -23,12 +23,13 @@
             </div>
 
             <div id="hamburger">
-                <span class="h-s1"></span>
-                <span class="h-s2"></span>
-                <span class="h-s3"></span>
+                <span class="h-line"></span>
+                <span></span>
+                <span class="h-line"></span>
             </div>
             <div id="hamburger-menu">
                 <ul class="hnav-list">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Repairs</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Contact</a></li>
@@ -56,6 +57,8 @@
                 <p class="desc">Check out our repair, service section or contact up now to schedule a servicing.</p>
             </div>
         </section>
+
+        <div class="separator"></div>
 
         <section id="infos">
             <div class="info">
@@ -86,6 +89,8 @@
             </div>
         </section>
 
+        <div class="separator"></div>
+
         <section id="fut" class="mw">
             <div class="title">FIND US THERE!</div>
             <div class="map">
@@ -93,19 +98,23 @@
             </div>
         </section>
 
+        <div class="separator"></div>
+
         <section id="about-us" class="mw">
             <div class="title">ABOUT US</div>
-            <p><span class="medium-font">KAM Computers &amp; Mobiles</span> offers a wide variety of comprehensive IT Services and benefits that are designed to cater to the specific needs of home and business computer users in the UK since 1997. We provide immediate IT Support, on site or remotely for North West London.</p>
+            <p><span class="medium-font blue">KAM Computers &amp; Mobiles</span> offers a wide variety of comprehensive IT Services and benefits that are designed to cater to the specific needs of home and business computer users in the UK since 1997. We provide immediate IT Support, on site or remotely for North West London.</p>
 
-            <p><span class="medium-font">KAM Computers &amp; Mobiles</span> focuses on repairs for individuals and corporate companies throughout the UK and Europe providing a cost effective and efficient repair service. All organisations have different needs with some companies having requirements for one or two repairs and others needing hundreds of devices to be repaired. KAM Computers &amp; Mobile IT Solutions is dedicated to providing the best customer service. Computers and mobiles repairs available to you. When your computer or Mobile needs repairing, you won’t have to worry for long! Our technicians are skilled in dealing with all top-line computers and mobiles whether you need home or small business repairs.</p>
+            <p><span class="medium-font blue">KAM Computers &amp; Mobiles</span> focuses on repairs for individuals and corporate companies throughout the UK and Europe providing a cost effective and efficient repair service. All organisations have different needs with some companies having requirements for one or two repairs and others needing hundreds of devices to be repaired. KAM Computers &amp; Mobile IT Solutions is dedicated to providing the best customer service. Computers and mobiles repairs available to you. When your computer or Mobile needs repairing, you won’t have to worry for long! Our technicians are skilled in dealing with all top-line computers and mobiles whether you need home or small business repairs.</p>
 
-            <p>Every day it seems like there are more and more viruses, spyware applications and software issues ready to attack your computer and render it useless. Hearing the technology news can be overwhelming! Our technicians are not only here to help you with computer repairs but they can also help you understand how best to protect your computer from problems like these. We have <span class="medium-font">qualified engineers, use original parts, have a quick turnaround time</span>.</p>
+            <p>Every day it seems like there are more and more viruses, spyware applications and software issues ready to attack your computer and render it useless. Hearing the technology news can be overwhelming! Our technicians are not only here to help you with computer repairs but they can also help you understand how best to protect your computer from problems like these. We have <span class="medium-font blue">qualified engineers, use original parts, have a quick turnaround time</span>.</p>
 
             <p>Our business has been established to offer fantastic customer service as well as high-quality computer repairs with quick turn-over. If you have any questions about your computer system or want to schedule an appointment, just give us a call! We’ll take care of your computer repair needs and make sure you know how to safeguard your computer from failing again.</p>
         </section>
 
+        <div class="separator"></div>
+
         <section id="contact" class="mw">
-           <p class="title">CONTACT</p>
+            <p class="title">CONTACT</p>
             <div class="medium-font">WEST HAMPSTEAD BRANCH</div>
             <p>sad</p>
             <p>sad</p>
@@ -117,27 +126,23 @@
             <p><span class="medium-font">E-MAIL:</span> barnet@KamComputersAndMobiles.com</p>
         </section>
 
+        <div class="separator"></div>
+
         <section id="comments" class="mw">
             <p class="cmt title">Leave a message!</p>
-            <div id="wpac-comment"></div>
-            <script type="text/javascript">
-                wpac_init = window.wpac_init || [];
-                wpac_init.push({
-                    widget: 'Comment',
-                    id: 26355
-                });
+            <div id="disqus_thread"></div>
+            <script>
                 (function() {
-                    if ('WIDGETPACK_LOADED' in window) return;
-                    WIDGETPACK_LOADED = true;
-                    var mc = document.createElement('script');
-                    mc.type = 'text/javascript';
-                    mc.async = true;
-                    mc.src = 'https://embed.widgetpack.com/widget.js';
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(mc, s.nextSibling);
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://hvber-kam.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
                 })();
             </script>
-            <a href="https://widgetpack.com" class="wpac-cr">Comments System WIDGET PACK</a>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
         </section>
     </main>
+    <script src="hamburger.js"></script>
 </body></html>
