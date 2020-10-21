@@ -14,7 +14,10 @@
         section {
             overflow: hidden;
         }
-
+        body{
+            background-color: #222;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         #ramka {
             margin-right: auto;
             margin-left: auto;
@@ -23,7 +26,7 @@
         }
 
         #naglowek {
-            background-color: #888;
+            background-color: rgba(0,0,0,.3);
             font-size: 20pt;
             color: #000000;
             font-family: Arial;
@@ -37,12 +40,17 @@
         }
 
         #stopka {
-            background-color: #c0c0c0;
             font-size: 14pt;
-            color: blue;
-            font-family: Arial;
+            color: white;
             font-style: Italic;
             clear: both;
+
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #000;
         }
 
         .kolumny {
@@ -50,9 +58,16 @@
             margin-right: 2%;
             margin-bottom: 2%;
             margin-left: 10px;
-            background-color: #c0c0c0;
+            background-color: rgba(0,0,0,.3);
+            color: white;
+            text-align: center;
+            border-radius: 1rem;
         }
-
+        
+        .kolumny h3{
+            background-color: #05e;
+            color: white;
+        }
         #kol1 {
             float: left;
             width: 20%;
@@ -67,8 +82,7 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            background-color: #555;
-            border: 1px solid #555;
+            background-color: #000;
         }
 
         li a {
@@ -80,7 +94,6 @@
 
         li {
             text-align: center;
-            border-bottom: 1px solid #f1f1f1;
         }
 
         li a.active {
@@ -89,12 +102,15 @@
         }
 
         li a:hover:not(.active) {
-            background-color: #f1f1f1;
-            color: black;
+            background-color: #06f;
+            color: white;
+            transition: background-color .2s ease-in-out;
         }
         footer a{
             text-decoration: none;
-            color: rgba(0,0,0,.3);
+        }
+        .kolumny img{
+            box-shadow: 0 0 20px rgba(0,0,0,.3);
         }
 
         @media only screen and (max-width:620px) {
