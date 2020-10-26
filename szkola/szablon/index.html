@@ -5,120 +5,7 @@
     <title>Strona responsywna</title>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        section {
-            overflow: hidden;
-        }
-        body{
-            background-color: #222;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        #ramka {
-            margin-right: auto;
-            margin-left: auto;
-            min-width: 300px;
-            max-width: 1000px;
-        }
-
-        #naglowek {
-            background-color: rgba(0,0,0,.3);
-            font-size: 20pt;
-            color: #000000;
-            font-family: Arial;
-            font-style: italic;
-            text-align: center;
-            font-weight: bold;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        #stopka {
-            font-size: 14pt;
-            color: white;
-            font-style: Italic;
-            clear: both;
-
-            height: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            background-color: #000;
-        }
-
-        .kolumny {
-            margin-top: 10px;
-            margin-right: 2%;
-            margin-bottom: 2%;
-            margin-left: 10px;
-            background-color: rgba(0,0,0,.3);
-            color: white;
-            text-align: center;
-            border-radius: 1rem;
-        }
-        
-        .kolumny h3{
-            background-color: #05e;
-            color: white;
-        }
-        #kol1 {
-            float: left;
-            width: 20%;
-        }
-
-        #kol2 {
-            padding: 25px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            background-color: #000;
-        }
-
-        li a {
-            display: block;
-            color: #fff;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-        li {
-            text-align: center;
-        }
-
-        li a.active {
-            background-color: #4caf50;
-            color: white;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #06f;
-            color: white;
-            transition: background-color .2s ease-in-out;
-        }
-        footer a{
-            text-decoration: none;
-        }
-        .kolumny img{
-            box-shadow: 0 0 20px rgba(0,0,0,.3);
-        }
-
-        @media only screen and (max-width:620px) {
-            #kol1 {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -127,20 +14,21 @@
             <img src="img/logo.png" alt="logo">
             <img src="img/banner.png" alt="banner">
         </header>
-        <section class="kolumny" id="kol1">
-            <h3>Menu</h3>
+        <section class="kolumny shadow" id="kol1">
+            <h3 class="non-select">Menu</h3>
             <ul>
                 <li><a href="start.html">Start</a></li>
+                <li><a href="atrakcje.html">Atrakcje</a></li>
                 <li><a href="nowe.html">Kursy</a></li>
                 <li><a href="serwis.html">Artykuły</a></li>
                 <li><a href="uslugi.html">Kontakt</a></li>
             </ul>
         </section>
-        <section class="kolumny" id="kol2">
+        <section class="kolumny shadow" id="kol2">
             <img src="img/tokio.gif" alt="wakacje w tokio">
         </section>
-        <footer id="stopka">Pracę wykonał Sebastian Haber</footer>
     </div>
+    <footer id="stopka">Pracę wykonał Sebastian Haber</footer>
 </body>
 
 </html>
